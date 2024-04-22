@@ -1,0 +1,146 @@
+.profile-form {
+    width: 100%;
+    row-gap: 12px;
+    margin-top: 15px;
+    padding-bottom: 20px;
+
+    .left {
+        width: 200px;
+        min-width: 150px;
+        max-width: 200px;
+
+        p {
+            line-height: 60px;
+        }
+    }
+
+    .right {
+        width: 60%;
+    }
+
+    .photo-container {
+        row-gap: 10px;
+
+        .photo-div {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid red;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .photo-container-new{
+        align-items: center;
+
+        .right{
+            margin: 0;
+            input{
+                border: none;
+            }
+        }
+    }
+
+    .name-container {
+        .name-div {
+            display: grid;
+            column-gap: 5px;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        }
+    }
+
+    .address-container {
+        .address-div {
+            column-gap: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+    }
+}
+
+.button-div {
+    align-items: center;
+    column-gap: 12px;
+    margin-top: 5px;
+
+    input,
+    button {
+        border-radius: 8px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    a {
+        color: white;
+        line-height: 44px;
+        padding: 0 24px;
+        border-radius: 8px;
+        background-color: var(--negative-color);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .body-container {
+        .content-article {
+            .profile-form {
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .body-container {
+        .content-article {
+            .profile-form {
+
+                .left {
+                    p {
+                        line-height: 30px;
+                    }
+                }
+
+                input,
+                select {
+                    width: 100%;
+                }
+
+                div {
+                    flex-direction: column;
+                }
+
+                .name-container {
+                    .name-div {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
+                .address-container {
+                    .address-div {
+                        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+                    }
+                }
+
+                .button-div {
+                    flex-direction: column;
+                    row-gap: 12px;
+
+                    button {
+                        width: 100%;
+                    }
+
+                    a {
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

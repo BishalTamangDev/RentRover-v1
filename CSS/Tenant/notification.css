@@ -1,0 +1,89 @@
+.heading-container {
+  margin-top: 10px;
+}
+.heading-container .heading-div {
+  width: 70%;
+  margin: auto;
+}
+
+.notification-filter-container {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.notification-filter-container .filter {
+  padding: 4px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+}
+.notification-filter-container .filter:hover {
+  background-color: lightgray;
+}
+
+.notification-main-container {
+  margin-top: 10px;
+  row-gap: 10px;
+}
+.notification-main-container .notification-filter-container {
+  width: 70%;
+}
+.notification-main-container .notification-container {
+  margin: auto;
+  width: 70%;
+}
+
+.notification-container {
+  margin-top: 10px;
+}
+.notification-container .notification-card {
+  padding: 8px 4px;
+  padding-bottom: 14px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  border-bottom: 1px solid var(--shadow-color);
+}
+.notification-container .notification-card:hover {
+  background-color: rgb(241, 241, 241);
+}
+.notification-container .notification-card .left {
+  padding: 10px;
+}
+.notification-container .notification-card .left .notify-image-container {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.notification-container .notification-card .left .notify-image-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.notification-container .notification-card .middle {
+  width: 100%;
+  padding-top: 4px;
+}
+.notification-container .notification-card .middle .button-section {
+  margin-top: 6px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.notification-container .notification-card .middle .button-section button {
+  padding: 5px 20px;
+}
+.notification-container .notification-card .middle .button-section .button-1 {
+  background-color: var(--base-color);
+}
+.notification-container .notification-card .middle .button-section .button-2 {
+  background-color: var(--negative-color);
+}
+.notification-container .notification-card .middle .notification-date {
+  margin-top: 4px;
+}
+.notification-container .notification-card .right {
+  padding: 10px;
+}
+.notification-container .notification-card .right a img {
+  width: 24px;
+}/*# sourceMappingURL=notification.css.map */

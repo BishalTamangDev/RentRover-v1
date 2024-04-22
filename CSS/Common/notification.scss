@@ -1,0 +1,81 @@
+.notification-filter-container{
+    column-gap: 8px;
+
+    .filter{
+        padding: 4px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: rgb(233, 233, 233);
+
+        &:hover{
+            background-color: lightgray;
+        }
+    }
+}
+
+.notification-container {
+    margin-top: 10px;
+
+    .notification-card {
+        padding: 8px 4px;
+        padding-bottom: 14px;
+        column-gap: 6px;
+        border-bottom: 1px solid var(--shadow-color);
+
+        &:hover {
+            background-color: rgb(241, 241, 241);
+        }
+
+        .left {
+            padding: 10px;
+
+            .notify-image-container {
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                border-radius: 50%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .middle {
+            width: 100%;
+            padding-top: 4px;
+
+            .button-section{
+                margin-top: 6px;
+                column-gap: 6px;
+                
+                button{
+                    padding: 5px 20px;
+                }
+
+                .button-1{
+                    background-color: var(--base-color);
+                }
+
+                .button-2{
+                    background-color: var(--negative-color);
+                }
+            }
+
+            .notification-date {
+                margin-top: 4px;
+            }
+        }
+
+        .right {
+            padding: 10px;
+            a{
+                img{
+                    width: 24px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.table-container {
+  width: 100%;
+  row-gap: 10px;
+}
+.table-container .table-top-section {
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.table-container .table-top-section .table-name-clear-sort-div {
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table thead {
+  line-height: 36px;
+}
+table thead th {
+  opacity: 0.6;
+  font-size: var(--fs-font);
+  font-weight: normal;
+  vertical-align: top;
+}
+table tbody tr {
+  cursor: pointer;
+}
+table tbody tr:hover {
+  background-color: rgb(238, 238, 238);
+}
+table tbody tr td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 38px;
+  vertical-align: top;
+  padding-right: 15px;
+  font-size: var(--fs-normal);
+}
+table .first-td {
+  padding-left: 6px;
+}
+
+.table-class .t-serial {
+  padding-left: 6px;
+}
+.table-class .t-house-id {
+  max-width: 90px;
+  min-width: 90px;
+  width: 90px;
+  padding-left: 4px;
+}
+.table-class .t-number-of-room {
+  max-width: 116px;
+  min-width: 116px;
+  width: 116px;
+}
+.table-class .t-house-state {
+  max-width: 124px;
+  min-width: 124px;
+  width: 124px;
+}
+.table-class .t-register-date {
+  max-width: 120px;
+  min-width: 120px;
+  width: 120px;
+}
+.table-class .t-amenties,
+.table-class .t-requirement {
+  padding-right: 8px;
+}
+
+@media only screen and (max-width: 960px) {
+  .myhouse-table-container .my-house-table .t-amenties,
+  .myhouse-table-container .my-house-table .t-requirement {
+    display: none;
+  }
+}
+@media only screen and (max-width: 645px) {
+  .table-container .my-house-table .t-house-id {
+    min-width: 65px;
+    width: 65px;
+  }
+  .table-container .my-house-table .t-number-of-room {
+    min-width: 60px;
+    width: 60px;
+  }
+  .table-container .my-house-table .t-house-state {
+    min-width: 80px;
+    width: 80px;
+  }
+  .table-container .my-house-table .t-register-date {
+    min-width: 70px;
+    width: 70px;
+  }
+  .table-container .my-house-table .t-amenties,
+  .table-container .my-house-table .t-requirement {
+    display: none;
+  }
+}
+.my-room-table .t-house-id {
+  padding-left: 6px;
+  width: 90px;
+  min-width: 90px;
+  max-width: 90px;
+}
+.my-room-table .t-room-id {
+  min-width: 75px;
+  max-width: 75px;
+}
+.my-room-table .t-room-number,
+.my-room-table .t-room-type,
+.my-room-table .t-rating {
+  min-width: 85px;
+  max-width: 85px;
+}
+.my-room-table .t-number-of-room {
+  min-width: 115px;
+  max-width: 115px;
+}
+.my-room-table .t-rent {
+  min-width: 120px;
+  max-width: 120px;
+}
+.my-room-table .t-room-state {
+  min-width: 95px;
+  max-width: 95px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .my-room-table .t-house-id,
+  .my-room-table .t-room-id,
+  .my-room-table .t-room-number {
+    width: 60px;
+    min-width: 60px;
+  }
+  .my-room-table .t-room-type {
+    width: 70px;
+    min-width: 70px;
+  }
+  .my-room-table .t-number-of-room {
+    width: 115px;
+    min-width: 115px;
+  }
+  .my-room-table .t-rent {
+    width: 90px;
+    min-width: 90px;
+  }
+  .my-room-table .t-rating {
+    width: 65px;
+    min-width: 65px;
+  }
+  .my-room-table .t-room-state {
+    width: 75px;
+    min-width: 75px;
+  }
+}
+.myroom-table-container .table-top-section {
+  border: none;
+}
+
+@media only screen and (max-width: 855px) {
+  .myroom-table-container .my-room-table .t-house-id,
+  .myroom-table-container .my-room-table .t-room-state {
+    display: none;
+  }
+  .myroom-table-container .my-room-table .t-room-id {
+    padding-left: 6px;
+  }
+}
+@media only screen and (max-width: 715px) {
+  .myroom-table-container .my-room-table .t-number-of-room {
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+  }
+}/*# sourceMappingURL=table.css.map */

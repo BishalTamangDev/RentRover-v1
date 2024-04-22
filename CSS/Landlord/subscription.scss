@@ -1,0 +1,32 @@
+.subscription-div {
+    column-gap: 20px;
+    justify-content: space-between;
+
+    .subscription-left-div {
+        row-gap: 10px;
+        justify-content: center;
+    }
+
+    .subscription-right-div {
+        row-gap: 10px;
+        padding: 6px;
+        border: 1px solid rgb(228, 225, 225);
+
+        img {
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    .content-article {
+        .subscription-div {
+            row-gap: 12px;
+            flex-direction: column;
+
+            .subscription-right-div {
+                align-items: center;
+            }
+        }
+    }
+}

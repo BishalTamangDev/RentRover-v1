@@ -1,0 +1,254 @@
+// general properties
+.table-container {
+    width: 100%;
+    row-gap: 10px;
+
+    // search section
+    .table-top-section {
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        // border-top: 1px solid rgb(216, 216, 216);
+        border-bottom: 1px solid rgb(216, 216, 216);
+
+        .table-name-clear-sort-div {
+            align-items: center;
+            column-gap: 12px;
+        }
+    }
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    thead {
+        line-height: 36px;
+
+        th {
+            opacity: 0.6;
+            font-size: var(--fs-font);
+            font-weight: normal;
+            vertical-align: top;
+        }
+    }
+
+    tbody {
+        tr {
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(238, 238, 238);
+            }
+
+            td {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                line-height: 38px;
+                vertical-align: top;
+                padding-right: 15px;
+                font-size: var(--fs-normal);
+            }
+        }
+    }
+
+    .first-td {
+        padding-left: 6px;
+    }
+}
+
+.table-class {
+    .t-serial {
+        padding-left: 6px;
+    }
+
+    .t-house-id {
+        max-width: 90px;
+        min-width: 90px;
+        width: 90px;
+        padding-left: 4px;
+    }
+
+    .t-number-of-room {
+        max-width: 116px;
+        min-width: 116px;
+        width: 116px;
+    }
+
+    .t-house-state {
+        max-width: 124px;
+        min-width: 124px;
+        width: 124px;
+    }
+
+    .t-register-date {
+        max-width: 120px;
+        min-width: 120px;
+        width: 120px;
+    }
+
+    .t-amenties,
+    .t-requirement {
+        padding-right: 8px;
+    }
+}
+
+// house table responsive section
+@media only screen and (max-width: 960px) {
+    .myhouse-table-container {
+        .my-house-table {
+
+            .t-amenties,
+            .t-requirement {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .table-container {
+        .my-house-table {
+            .t-house-id {
+                min-width: 65px;
+                width: 65px;
+            }
+
+            .t-number-of-room {
+                min-width: 60px;
+                width: 60px;
+            }
+
+            .t-house-state {
+                min-width: 80px;
+                width: 80px;
+            }
+
+            .t-register-date {
+                min-width: 70px;
+                width: 70px;
+            }
+
+            .t-amenties,
+            .t-requirement {
+                display: none;
+            }
+        }
+    }
+}
+
+// room table
+.my-room-table {
+    .t-house-id {
+        padding-left: 6px;
+        width: 90px;
+        min-width: 90px;
+        max-width: 90px;
+    }
+
+    .t-room-id {
+        min-width: 75px;
+        max-width: 75px;
+    }
+
+    .t-room-number,
+    .t-room-type,
+    .t-rating {
+        min-width: 85px;
+        max-width: 85px;
+    }
+
+    .t-number-of-room {
+        min-width: 115px;
+        max-width: 115px;
+    }
+
+    .t-rent {
+        min-width: 120px;
+        max-width: 120px;
+    }
+
+    .t-room-state {
+        min-width: 95px;
+        max-width: 95px;
+    }
+}
+
+// my room table : responsive section
+@media only screen and (max-width: 1120px) {
+    .my-room-table {
+
+        .t-house-id,
+        .t-room-id,
+        .t-room-number {
+            width: 60px;
+            min-width: 60px;
+            // max-width: 60px;
+        }
+
+        .t-room-type {
+            width: 70px;
+            min-width: 70px;
+            // max-width: 70px;
+        }
+
+        .t-number-of-room {
+            width: 115px;
+            min-width: 115px;
+            // max-width: 115px;
+        }
+
+        .t-rent {
+            width: 90px;
+            min-width: 90px;
+            // max-width: 90px;
+        }
+
+        .t-rating {
+            width: 65px;
+            min-width: 65px;
+            // max-width: 65px;
+        }
+
+        .t-room-state {
+            width: 75px;
+            min-width: 75px;
+            // max-width: 75px;
+        }
+    }
+}
+
+.myroom-table-container{
+    .table-top-section{
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .myroom-table-container {
+        .my-room-table {
+
+            .t-house-id,
+            .t-room-state {
+                display: none;
+            }
+
+            .t-room-id {
+                padding-left: 6px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .myroom-table-container {
+        .my-room-table {
+            .t-number-of-room {
+                width: 60px;
+                min-width: 60px;
+                max-width: 60px;
+            }
+        }
+    }
+}

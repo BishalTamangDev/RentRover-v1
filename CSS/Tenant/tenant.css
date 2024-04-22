@@ -1,0 +1,12 @@
+body {
+  min-height: 95.5vh;
+  padding-bottom: 390px;
+}
+
+.empty-data-container .empty-data-div {
+  margin: auto;
+  align-items: center;
+}
+.empty-data-container .empty-data-div img {
+  width: 260px;
+}/*# sourceMappingURL=tenant.css.map */

@@ -1,0 +1,122 @@
+// all room container
+.all-room-container {
+    padding-top: 69px;
+    column-gap: 40px;
+}
+
+.all-room-div {
+    width: 100%;
+    margin: 0 auto;
+
+    .room-container {
+        width: 100%;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin-top: 15px;
+        grid-template-columns: repeat(6, 1fr);
+
+        .room {
+            width: 280px;
+            height: 262px;
+            overflow: hidden;
+
+            &:hover .top .room-photo-div img {
+                width: 110%;
+                transition: 0.5s;
+            }
+
+            .top {
+                width: 100%;
+                height: 160px;
+                overflow: hidden;
+
+                .room-photo-div {
+                    width: 280px;
+                    height: 200px;
+                    overflow: hidden;
+                    border-radius: 8px;
+                    background-color: whitesmoke;
+
+                    img {
+                        width: 100%;
+                        transition: 0.5s;
+                        transform: translate(0%, -25%);
+                    }
+                }
+
+                .wishlist-div {
+                    margin-top: 5px;
+                    position: absolute;
+                    margin-left: 250px;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+
+            .bottom {
+                row-gap: 6px;
+                padding: 10px;
+
+                .spec-div,
+                .price-div,
+                .location-div {
+                    column-gap: 8px;
+                    align-items: center;
+                }
+
+                .bottom-icons {
+                    width: 19px;
+                }
+            }
+        }
+    }
+
+    .view-all-container {
+        width: 100%;
+
+        button {
+            width: 130px;
+            height: 44px;
+            padding: 10px 20px;
+            border-radius: 6px;
+        }
+    }
+}
+
+// review section
+// review section
+.room-review-container {
+    display: none;
+    .room-review-div {
+        margin-top: 30px;
+        row-gap: 15px;
+
+        .review {
+            padding: 18px 14px;
+            column-gap: 40px;
+
+            .left {
+                row-gap: 10px;
+                .image-div {
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 2px solid red;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                row-gap: 10px;
+            }
+        }
+    }
+}

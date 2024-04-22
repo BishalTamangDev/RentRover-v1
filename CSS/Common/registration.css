@@ -1,0 +1,161 @@
+body {
+  background-image: url("../../Assests/Images/room-3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  background-color: var(--base-light-color);
+}
+
+.registration-container {
+  width: 1000px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin: 60px auto;
+  border: 1px solid rgb(212, 212, 212);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.registration-container .registration-top-section {
+  width: 100%;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.registration-container .registration-top-section img {
+  margin-top: 4px;
+}
+.registration-container .registration-bottom-section .registration-form {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.registration-container .registration-bottom-section .registration-form .form-section {
+  margin-top: 24px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section {
+  width: 100%;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .heading-sec {
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .name-sec-right {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .gender-sec {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .gender-sec .left {
+  width: 50%;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .gender-sec .right {
+  width: 50%;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  align-items: center;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .gender-sec .right label {
+  margin-left: -6px;
+  font-size: 15px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .password-sec .top {
+  justify-content: space-between;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .password-sec .password-sec-bottom {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .address-sec .top {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .address-sec .top select:nth-child(1) {
+  width: 88%;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .address-sec .bottom {
+  margin-top: 8px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-left-section .address-sec .bottom select {
+  width: 40%;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section {
+  width: 100%;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec,
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .profile-pic-sec {
+  width: 100%;
+  padding: 14px 8px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  background-color: white;
+  border: 0.5px solid rgb(202, 202, 202);
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec input[type=file],
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .profile-pic-sec input[type=file] {
+  border: none;
+  width: 280px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec {
+  align-items: start;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec .bottom {
+  justify-content: space-between;
+  margin-top: 14px;
+  row-gap: 12px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec .bottom input[type=file] {
+  border: none;
+  width: 280px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec .bottom .bottom-top, .registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec .bottom .bottom-bottom {
+  justify-content: space-between;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec .bottom .bottom-top label, .registration-container .registration-bottom-section .registration-form .bottom-right-section .citizenship-photo-sec .bottom .bottom-bottom label {
+  width: 150px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .birth-date-sec input[type=date] {
+  margin-top: 6px;
+  width: 100%;
+  height: 48px;
+  padding: 8px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .terms-and-condition-sec {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section .terms-and-condition-sec label {
+  cursor: pointer;
+}
+.registration-container .registration-bottom-section .registration-form .bottom-right-section input[type=submit] {
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+}
+.registration-container .registration-bottom-section .registration-form .already-have-account-link {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* responsive text size for tablet*/
+@media only screen and (max-width: 1024px) {
+  .registration-container {
+    width: 570px;
+  }
+  .registration-bottom-section {
+    width: auto;
+  }
+  .registration-bottom-section form {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=registration.css.map */

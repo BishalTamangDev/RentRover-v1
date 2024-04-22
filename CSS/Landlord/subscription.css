@@ -1,0 +1,27 @@
+.subscription-div {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+}
+.subscription-div .subscription-left-div {
+  row-gap: 10px;
+  justify-content: center;
+}
+.subscription-div .subscription-right-div {
+  row-gap: 10px;
+  padding: 6px;
+  border: 1px solid rgb(228, 225, 225);
+}
+.subscription-div .subscription-right-div img {
+  width: 150px;
+}
+
+@media only screen and (max-width: 968px) {
+  .content-article .subscription-div {
+    row-gap: 12px;
+    flex-direction: column;
+  }
+  .content-article .subscription-div .subscription-right-div {
+    align-items: center;
+  }
+}/*# sourceMappingURL=subscription.css.map */

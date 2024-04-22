@@ -1,0 +1,5 @@
+@media only screen and (max-width: 600px) {
+  .body-container .content-article .house-detail-container .house-detail-right-div .buttons-div .top {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=myhouse-detail.css.map */

@@ -1,0 +1,11 @@
+.section-heading-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  row-gap: 10px;
+}
+.section-heading-container button {
+  max-width: 180px;
+}/*# sourceMappingURL=dashboard.css.map */

@@ -1,0 +1,106 @@
+.profile-form {
+  width: 100%;
+  row-gap: 12px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+}
+.profile-form .left {
+  width: 200px;
+  min-width: 150px;
+  max-width: 200px;
+}
+.profile-form .left p {
+  line-height: 60px;
+}
+.profile-form .right {
+  width: 60%;
+}
+.profile-form .photo-container {
+  row-gap: 10px;
+}
+.profile-form .photo-container .photo-div {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid red;
+}
+.profile-form .photo-container .photo-div img {
+  width: 100%;
+}
+.profile-form .photo-container-new {
+  align-items: center;
+}
+.profile-form .photo-container-new .right {
+  margin: 0;
+}
+.profile-form .photo-container-new .right input {
+  border: none;
+}
+.profile-form .name-container .name-div {
+  display: grid;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.profile-form .address-container .address-div {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.button-div {
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-top: 5px;
+}
+.button-div input,
+.button-div button {
+  border-radius: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.button-div a {
+  color: white;
+  line-height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background-color: var(--negative-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .body-container .content-article .profile-form .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .body-container .content-article .profile-form .left p {
+    line-height: 30px;
+  }
+  .body-container .content-article .profile-form input,
+  .body-container .content-article .profile-form select {
+    width: 100%;
+  }
+  .body-container .content-article .profile-form div {
+    flex-direction: column;
+  }
+  .body-container .content-article .profile-form .name-container .name-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .body-container .content-article .profile-form .address-container .address-div {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .body-container .content-article .profile-form .button-div {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .body-container .content-article .profile-form .button-div button {
+    width: 100%;
+  }
+  .body-container .content-article .profile-form .button-div a {
+    text-align: center;
+    width: 100%;
+  }
+}/*# sourceMappingURL=profile-edit.css.map */

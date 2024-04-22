@@ -1,0 +1,87 @@
+.custom-room-application-container {
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+#dark-background{
+    width: 100%;
+    height: 103.7%;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+}
+
+.custom-room-application-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 85%;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px 15px;
+    row-gap: 15px;
+    transform: translate(50%, 5%);
+    overflow-y: scroll;
+    z-index: 10000;
+    background-color: white;
+
+    .custom-top-section {
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            cursor: pointer;
+            width: 28px;
+        }
+    }
+
+    // map
+    .custom-map-container {
+        .custom-map-div {
+            height: 290px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-color: lightgray;
+            }
+        }
+    }
+
+    .custom-map-container,
+    .custom-location-container,
+    .custom-room-type-container,
+    .custom-rent-range-container,
+    .custom-furnishing-container,
+    .custom-floor-container {
+        row-gap: 5px;
+    }
+
+    // location
+    .custom-location-container {
+        .custom-location-div {
+            column-gap: 10px;
+        }
+    }
+
+    // room type
+    .custom-room-type-container {
+        .custom-room-type-number {
+            column-gap: 10px;
+        }
+    }
+
+    .custom-rent-range-container {
+        .custom-rent-range-div {
+            align-items: center;
+            column-gap: 10px;
+        }
+    }
+}

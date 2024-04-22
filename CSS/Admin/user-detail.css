@@ -1,0 +1,109 @@
+.body-container .content-article {
+  width: 87%;
+  padding: 0 24px;
+  padding-top: 24px;
+  background-color: white;
+}
+.body-container .content-article .user-detail-div {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.body-container .content-article .user-detail-div .photo-container .photo-div {
+  height: 380px;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: whitesmoke;
+}
+.body-container .content-article .user-detail-div .photo-container .photo-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body-container .content-article .user-detail-div div .left {
+  width: 180px;
+  min-width: 120px;
+  overflow: hidden;
+  padding: 4px 0;
+}
+.body-container .content-article .user-detail-div div .left p {
+  padding-left: 2px;
+}
+.body-container .content-article .user-detail-div div .right {
+  padding: 4px 0;
+}
+.body-container .content-article .user-detail-div .user-detail-section-2 {
+  row-gap: 8px;
+}
+.body-container .content-article .user-detail-div .user-detail-section-2 img {
+  max-width: 20px;
+  max-height: 20px;
+}
+.body-container .content-article .user-detail-div .user-detail-section-2 a {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.body-container .content-article .user-detail-div .button-div {
+  margin-top: 8px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.body-container .content-article .user-detail-div .button-div button {
+  border-radius: 6px;
+}
+.body-container .content-article .user-detail-div .button-div .positive-button {
+  display: flex;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  align-items: center;
+}
+.body-container .content-article .user-detail-div .button-div .positive-button img {
+  width: 24px;
+}
+.body-container .content-article .residing-room-detail-container {
+  row-gap: 8px;
+  margin-top: 30px;
+}
+.body-container .content-article .residing-room-detail-container .heading {
+  background-color: lavenderblush;
+  padding: 8px 4px;
+}
+.body-container .content-article .residing-room-detail-container .room-detail-div .left p,
+.body-container .content-article .residing-room-detail-container .room-detail-div .right p {
+  padding: 4px 0;
+}
+.body-container .content-article .residing-room-detail-container .room-detail-div .left {
+  min-width: 120px;
+}
+.body-container .content-article .landlord-detail-container {
+  margin-bottom: 30px;
+}
+.body-container .content-article .landlord-detail-container .landlord-houses,
+.body-container .content-article .landlord-detail-container .landlord-rooms {
+  margin-top: 30px;
+  row-gap: 8px;
+}
+.body-container .content-article .landlord-detail-container .empty-result-div {
+  background-color: lavenderblush;
+  align-items: center;
+}
+.body-container .content-article .landlord-detail-container .empty-result-div p {
+  margin: 0 auto;
+  line-height: 48px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .body-container .content-article {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .body-container .content-article {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 645px) {
+  .body-container .content-article {
+    padding: 12px;
+  }
+}/*# sourceMappingURL=user-detail.css.map */

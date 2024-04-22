@@ -1,0 +1,53 @@
+.footer-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--neutral-dark-color);
+  width: 100%;
+  color: white;
+}
+.footer-container a {
+  color: white;
+  line-height: 32px;
+}
+.footer-container .footer-div {
+  padding: 30px 0;
+  width: 96%;
+  margin: auto;
+  justify-content: space-between;
+}
+.footer-container .footer-div .first .bottom, .footer-container .footer-div .second .bottom, .footer-container .footer-div .third .bottom, .footer-container .footer-div .fourth .bottom {
+  margin-top: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer-container .footer-div .first .bottom .section, .footer-container .footer-div .second .bottom .section, .footer-container .footer-div .third .bottom .section, .footer-container .footer-div .fourth .bottom .section {
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.footer-container .footer-div .first .bottom .section .left img, .footer-container .footer-div .second .bottom .section .left img, .footer-container .footer-div .third .bottom .section .left img, .footer-container .footer-div .fourth .bottom .section .left img {
+  width: 24px;
+}
+.footer-container .footer-div .fourth .bottom {
+  row-gap: 15px;
+}
+.footer-container .footer-div .fourth .bottom .section {
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+.copyright-container {
+  width: 100%;
+  text-align: center;
+  background-color: var(--base-color);
+}
+.copyright-container .copyright-div {
+  width: 96%;
+  margin: auto;
+}
+.copyright-container .copyright-div p {
+  color: white;
+  line-height: 52px;
+}/*# sourceMappingURL=footer.css.map */

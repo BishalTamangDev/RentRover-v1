@@ -1,0 +1,300 @@
+.body-container {
+    width: 100%;
+    
+    .aside-menu-container {
+        position: fixed;
+        top: 0;
+        width: 13%;
+        max-width: 247px;
+        height: 100%;
+        padding: 20px 12px;
+        z-index: 100;
+        background-color: white;
+
+        .logo-section {
+            padding-left: 12px;
+
+            img {
+                width: 60%;
+            }
+        }
+
+        .aside-menu-section {
+            margin-top: 80px;
+            row-gap: 8px;
+        }
+
+        .section {
+            padding: 12px 12px;
+            row-gap: 6px;
+            border-radius: 8px;
+            column-gap: 12px;
+            align-items: center;
+
+            &:hover {
+                background-color: rgb(237, 237, 237);
+            }
+        }
+    }
+
+    .nav-menus-container {
+        width: 100%;
+        margin-left: 13%;
+
+        // navbar
+        .nav-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 87%;
+            padding: 16px 20px;
+            z-index: 90;
+            align-items: center;
+            justify-content: flex-end;
+            background-color: white;
+            border-bottom: 1px solid rgb(233, 233, 233);
+
+            .notification-profile-container {
+                column-gap: 18px;
+
+                .nav-notification-container {
+                    padding-top: 3px;
+
+                    .notification-icon-div {
+                        img {
+                            width: 32px;
+                        }
+                    }
+
+                    .notification-count-div {
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        align-items: center;
+                        position: absolute;
+                        margin-top: -8px;
+                        margin-left: 16px;
+                        opacity: 0.9;
+                        background-color: red;
+
+                        p {
+                            color: white;
+                            margin: auto;
+                        }
+                    }
+                }
+
+                .profile-container {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        // user menu and notification menu container
+        .menus-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 80;
+            width: 100%;
+            justify-content: flex-end;
+
+            // menu
+            .user-menu-container {
+                width: 100%;
+                padding-top: 69px;
+                padding-right: 24px;
+                justify-content: flex-end;
+
+                .user-menu-div {
+                    justify-content: flex-end;
+
+                    .user-menu {
+                        z-index: 100;
+                        background-color: white;
+                        border: 1px solid whitesmoke;
+
+                        .section {
+                            padding: 20px;
+                            padding-right: 80px;
+                            column-gap: 12px;
+                            align-items: center;
+
+                            &:hover {
+                                background-color: var(--neutral-light-color);
+                                background-color: lavender;
+                            }
+
+                            img {
+                                width: 22px;
+                            }
+                        }
+
+                        hr {
+                            height: 1px;
+                            background-color: var(--shadow-color);
+                        }
+                    }
+                }
+            }
+
+            // notification
+            .notification-menu-container {
+                padding-top: 68px;
+                padding-right: 24px;
+                height: 80vh;
+                justify-content: flex-end;
+
+                .notification-menu-div {
+                    justify-content: flex-end;
+
+                    .notification-container {
+                        z-index: 100;
+                        position: fixed;
+                        width: 400px;
+                        background-color: white;
+                        border: 1px solid whitesmoke;
+                        max-height: 80vh;
+                        overflow-x: auto;
+
+                        .notification-top-section{
+                            width: 100%;
+                            row-gap: 8px;
+                            padding: 12px;
+                            column-gap: 12px;
+                            justify-content: space-between;
+
+                            .top{
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+
+                            .bottom{
+                                column-gap: 6px;
+
+                                .card{
+                                    border-radius: 20px;
+                                    padding: 4px 12px;
+
+                                    &:hover{
+                                        background-color: lavender;
+                                    }
+                                }
+                                
+                                .active-card{
+                                    background-color: var(--shadow-color);
+                                }
+                            }
+                        }
+                        
+                        // individual notification card
+                        .section {
+                            width: 100%;
+                            padding: 12px;
+                            column-gap: 6px;
+                            justify-content: space-between;
+
+                            &:hover {
+                                background-color: lavender;
+                            }
+
+                            .left {
+                                width: 57px;
+                                overflow: hidden;
+
+                                .dot{
+                                    width: 4px;
+                                    height: 4px;
+                                    border-radius: 50%;
+                                }
+
+                                .icon-box{
+                                    width: 40px;
+                                    height: 40px;
+                                    min-width: 40px;
+                                    overflow: hidden;
+                                    border-radius: 50%;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+
+                            .right{
+                                width: 100%;
+                                row-gap: 4px;
+                                margin-top: -4px;
+                            }
+                        }
+
+                        hr {
+                            height: 1px;
+                            background-color: var(--neutral-light-color);
+                        }
+
+                        .empty-data-div{
+                            padding-top: 20px;
+                            padding-bottom: 20px;
+                            width: 100%;
+                            align-items: center;
+                            text-align: center;
+                            img{
+                                margin: auto;
+                                width: 40%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .body-container {
+        .aside-menu-container {
+            width: 50px;
+            padding: 20px 0px;
+
+            .logo-section {
+                img {
+                    display: none;
+                }
+            }
+
+            .aside-menu-section {
+                width: 50px;
+            }
+
+            .section {
+                .right {
+                    display: none;
+                }
+            }
+        }
+
+        .nav-menus-container {
+            margin-left: 50px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-bottom: 12px;
+
+            .nav-container {
+                width: 100%;
+            }
+        }
+    }
+}

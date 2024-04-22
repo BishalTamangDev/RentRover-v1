@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title> My Voice Detail </title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../CSS/Common/style.css">
+    <link rel="stylesheet" href="../../CSS/Admin/admin.css">
+    <link rel="stylesheet" href="../../CSS/Tenant/my-voice-detail.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../../Assests/Images/RentRover-Logo.png">
+    
+    <!-- script section -->
+    <script>
+        // prevent resubmission of the form
+        if (window.history.replaceState)
+            window.history.replaceState(null, null, window.location.href);
+    </script>
+
+    <script src="../../Js/jquery-3.7.1.min.js"> </script>
+</head>
+
+<body>
+    <div class="container content-container flex-column my-voice-main-container">
+        <div class="div flex-column my-voice-main-div">
+            <p class="p-large f-bold n-light"> My Voice / Other Voices </p>
+
+            <!-- selected my voice container -->
+            <div class="flex-column selected-my-voice-container">
+                <div class="flex-column selected-my-voice-div">
+                    <div class="flex-row selected-my-voice-top">
+                        <div class="left negative-bg">
+                            <p class="p-form negative-bg"> Solved/ Unsolved </p>
+                        </div>
+
+                        <div class="right pointer" id="my-voice-close">
+                            <img src="../../Assests/Icons/Cancel-filled.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- voice detail -->
+                    <div class="flex-column selected-my-voice-div">
+                        <p class="selected-my-voice p-normal">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam eum magnam dolore, cumque porro similique voluptas. Iste officia dolores optio perferendis expedita aspernatur quas blanditiis. Labore illo aperiam assumenda omnis consequuntur ut perspiciatis officiis repellat, earum magni laboriosam pariatur, provident exercitationem natus molestias molestiae, itaque eos adipisci placeat. Repudiandae.
+                        </p>
+                        <p class="p-form"> 0000-00-00 </p>
+                    </div>
+
+                    <!-- redirection section -->
+                    <div class="flex-row selected-my-voice-redirection-section">
+                        <div class="flex-row selected-my-voice-redirection">
+                            <img src="../../Assests/Icons/room.png" alt="">
+                            <p class="p-form"> See Room Detail </p>
+                        </div>
+
+                        <div class="flex-row selected-my-voice-redirection">
+                            <img src="../../Assests/Icons/redirect.png" alt="">
+                            <p class="p-form"> Show More </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- response form section -->
+                <div class="flex-column selected-my-voice-response-container">
+                    <p class="p-form n-light"> 0 Responses </p>
+                    <div class="flex-row selected-my-voice-response-div">
+                        <div class="flex-row left">
+                            <div class="flex-row profile-div">
+                                <img src="../../Assests/Uploads/User/65d32ad8312350.68041721.jpg" alt="" class="icon-class">
+                            </div>
+                        </div>
+
+                        <!-- response detail -->
+                        <div class="middle">
+                            <div class="top">
+                                <p class="p-normal">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, nemo!
+                                </p>
+
+                                <p class="p-form"> 0000-00-00 </p>
+                            </div>
+                        </div>
+
+                        <!-- operation section -->
+                        <div class="right">
+                            <img src="../../Assests/Icons/delete.png" alt="" class="pointer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- responding form section -->
+                <div class="flex-row response-form-container">
+                    <!-- photo section -->
+                    <div class="left">
+                        <div class="photo-container">
+                            <img src="../../Assests/Uploads/User/65d32b944bb155.01772080.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- form section -->
+                    <form action="" class="flex-column response-form">
+                        <textarea name="response-data" id=""></textarea>
+                        <button name="response-btn"> Reply </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="flex-row card-container">
+                <div class="flex-row card pointer" id="my-voice-card-all">
+                    <p class="p-form"> All Voices </p>
+                    <p class="p-form f-bold n-light"> 10 </p>
+                </div>
+
+                <div class="flex-row card pointer" id="my-voice-card-unsolved">
+                    <p class="p-form"> Unsolved </p>
+                    <p class="p-form f-bold n-light"> 9 </p>
+                </div>
+
+                <div class="flex-row card pointer" id="my-voice-card-solved">
+                    <p class="p-form"> Solved </p>
+                    <p class="p-form f-bold n-light"> 1 </p>
+                </div>
+            </div>
+
+            <!-- voices -->
+            <div class="my-voice-container">
+                <!-- voice 1 -->
+                <div class="my-voice-div shadow flex-column my-voice-element my-voice-solved-element">
+                    <!-- top section -->
+                    <div class="top positive-bg">
+                        <p class="p-normal">
+                            Solved/ Unsolved
+                        </p>
+                    </div>
+
+                    <!-- voice detail -->
+                    <div class="flex-column my-voice">
+                        <p class="p-normal">
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus facilis pariatur
+                            nihil, magni accusamus nemo ratione officiis error sequi aut voluptatem architecto quisquam
+                            eos corporis?"
+                        </p>
+
+                        <p class="p-form"> 0000-00-00 </p>
+                    </div>
+
+                    <!-- redirection section -->
+                    <div class="flex-row my-voice-redirection-section">
+                        <div class="flex-row my-voice-redirection">
+                            <img src="../../Assests/Icons/room.png" alt="">
+                            <p class="p-form"> See Room Detail </p>
+                        </div>
+
+                        <div class="flex-row my-voice-redirection">
+                            <img src="../../Assests/Icons/redirect.png" alt="">
+                            <p class="p-form"> Show More </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- voice 2 -->
+                <div class="my-voice-div shadow flex-column my-voice-element my-voice-solved-element">
+                    <!-- top section -->
+                    <div class="top negative-bg">
+                        <p class="p-normal">
+                            Solved/ Unsolved
+                        </p>
+                    </div>
+
+                    <!-- voice detail -->
+                    <div class="flex-column my-voice">
+                        <p class="p-normal">
+                            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus facilis pariatur
+                            nihil, magni accusamus nemo ratione officiis error sequi aut voluptatem architecto quisquam
+                            eos corporis?"
+                        </p>
+
+                        <p class="p-form"> 0000-00-00 </p>
+                    </div>
+
+                    <!-- redirection section -->
+                    <div class="flex-row my-voice-redirection-section">
+                        <div class="flex-row my-voice-redirection">
+                            <img src="../../Assests/Icons/room.png" alt="">
+                            <p class="p-form"> See Room Detail </p>
+                        </div>
+
+                        <div class="flex-row my-voice-redirection">
+                            <img src="../../Assests/Icons/redirect.png" alt="">
+                            <p class="p-form"> Show More </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- empty context -->
+            <div class="container empty-data-container" id="empty-data-container">
+                <div class="flex-column div empty-data-div" id="empty-data-div">
+                    <img src="../../Assests/Icons/empty.png" alt="">
+                    <p class="p-normal negative"> Empty! </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // cards
+        const myVoiceAllCard = $('#my-voice-card-all');
+        const myVoiceUnolvedCard = $('#my-voice-card-unsolved');
+        const myVoiceSolvedCard = $('#my-voice-card-solved');
+
+        const emptyDataContainer = $('#empty-data-container');
+
+        var myVoiceElement = $('.my-voice-element');
+        var myVoiceUnsolvedElement = $('.my-voice-unsolved-element');
+        var myVoiceSolvedElement = $('.my-voice-solved-element');
+
+        emptyDataContainer.hide();
+        emptyDataContainer.show();
+
+        var myVoiceType = 0;
+        
+        myVoiceAllCard.click(function(){
+            myVoiceType = 0;
+            filterMyVoice();
+        });
+        
+        myVoiceUnolvedCard.click(function(){
+            myVoiceType = 1;
+            filterMyVoice();
+        });
+        
+        myVoiceSolvedCard.click(function(){
+            myVoiceType = 2;
+            filterMyVoice();
+        });
+
+        filterMyVoice = () =>{
+            myVoiceElement.hide();
+
+            if(myVoiceType == 0)
+                myVoiceElement.show();
+            else if(myVoiceType == 1)
+                myVoiceUnsolvedElement.show();
+            else
+                myVoiceSolvedElement.show();
+
+            if(countVisible() == 0)
+                emptyDataContainer.show();
+            else
+                emptyDataContainer.hide();
+        }
+
+        countVisible = () =>{
+            var count = $('.my-voice-element:visible').length;
+            return count;
+        }
+
+        filterMyVoice();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+#user-voice-heading {
+  margin-top: 20px;
+  padding-left: 4px;
+}
+
+.user-voice-div {
+  row-gap: 12px;
+  margin-top: 20px;
+}
+.user-voice-div .user-voice {
+  row-gap: 12px;
+  padding: 16px 12px;
+  border-radius: 8px;
+}
+.user-voice-div .user-voice .user-detail-div {
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.user-voice-div .user-voice .user-detail-div .image-div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-voice-div .user-voice .user-detail-div .image-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user-voice-div .user-voice .user-voice-box {
+  row-gap: 6px;
+  padding-left: 4px;
+}
+.user-voice-div .user-voice .user-voice-box .rating-div {
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+.user-voice-div .user-voice .user-voice-box .rating-div img {
+  width: 16px;
+}
+.user-voice-div .user-voice .bottom {
+  margin-top: 5px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.user-voice-div .user-voice .bottom .section {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding-left: 6px;
+  border-left: 2px solid rgb(202, 202, 202);
+}
+.user-voice-div .user-voice .bottom .section img {
+  width: 20px;
+  height: 20px;
+}
+.user-voice-div .user-voice .user-voice-response-div {
+  width: 100%;
+}
+.user-voice-div .user-voice .user-voice-response-div .user-voice-response-form {
+  row-gap: 10px;
+}
+.user-voice-div .user-voice .user-voice-response-div .user-voice-response-form textarea {
+  border-radius: 6px;
+  height: 100px;
+  border: 1px solid rgb(196, 196, 196);
+}
+.user-voice-div .user-voice .user-voice-response-div .user-voice-response-form .button-div {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.user-voice-div .user-voice .user-voice-response-div .user-voice-response-form .button-div button {
+  max-width: 90px;
+}
+
+.selected-voice-container .user-voice .user-detail-div .username-div {
+  width: 100%;
+}
+.selected-voice-container .user-voice .user-detail-div .close-div img {
+  width: 18px;
+  height: 18px;
+}
+.selected-voice-container .user-voice .operation-section .voice-operation-form {
+  row-gap: 10px;
+}
+.selected-voice-container .user-voice .operation-section .voice-operation-form textarea {
+  min-height: 150px;
+  overflow-y: scroll;
+  max-height: 40vh;
+  background-color: white;
+  resize: vertical;
+}
+.selected-voice-container .user-voice .operation-section .voice-operation-form button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.tenant-voice-reponse-container {
+  row-gap: 10px;
+}
+.tenant-voice-reponse-container .tenant-voice-reponse-div {
+  margin-left: 10px;
+  padding: 10px 10px 5px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+.tenant-voice-reponse-container .tenant-voice-reponse-div:hover {
+  background-color: rgb(226, 223, 223);
+}
+.tenant-voice-reponse-container .tenant-voice-reponse-div .left img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: 2px solid red;
+}
+.tenant-voice-reponse-container .tenant-voice-reponse-div .middle {
+  width: 100%;
+  row-gap: 5px;
+}/*# sourceMappingURL=user-voice.css.map */

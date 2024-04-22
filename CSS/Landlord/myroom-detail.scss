@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1500px) {
+    .body-container {
+        .content-article {
+            .house-detail-container {
+                .house-detail-right-div {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .body-container {
+        .content-article {
+            .house-detail-container {
+                .house-detail-right-div {
+                    height: 290px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .body-container {
+        .content-article {
+            .house-detail-container {
+                .house-detail-right-div {
+                    height: 350px;
+
+                    .buttons-div{
+                        .top{
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.menu-container {
+  position: fixed;
+  min-height: 120vh;
+  padding: 60px 0;
+  background-color: var(--base-dark-color);
+}
+.menu-container .top-sec {
+  padding-left: 20px;
+}
+.menu-container .top-sec .user-photo-container {
+  row-gap: 12px;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.menu-container .top-sec .user-photo-container img {
+  width: 100%;
+}
+.menu-container .top-sec p {
+  margin-left: 3px;
+}
+.menu-container .top-sec #ham-menu {
+  width: 24px;
+  display: none;
+}
+.menu-container .top-sec #ham-menu:hover {
+  cursor: pointer;
+}
+.menu-container .top-sec #ham-menu:hover path {
+  stroke: var(--warning-color);
+}
+.menu-container .top-sec #ham-menu path {
+  stroke: white;
+}
+.menu-container .bottom-sec {
+  margin-top: 80px;
+}
+.menu-container .bottom-sec ul {
+  list-style-type: none;
+}
+.menu-container .bottom-sec ul li {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 40px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.menu-container .bottom-sec ul li svg {
+  width: 24px;
+}
+.menu-container .bottom-sec ul li svg path {
+  stroke: white;
+}
+.menu-container .bottom-sec ul li svg .lined-icon {
+  fill: white;
+}
+.menu-container .bottom-sec ul li p {
+  color: white;
+  text-transform: uppercase;
+}
+.menu-container .bottom-sec ul li:hover {
+  cursor: pointer;
+  background-color: var(--base-light-color);
+}
+.menu-container .bottom-sec ul li:hover svg path {
+  stroke: var(--base-dark-color);
+}
+.menu-container .bottom-sec ul li:hover svg .lined-icon {
+  fill: var(--base-dark-color);
+}
+.menu-container .bottom-sec ul li:hover p {
+  font-weight: bold;
+  color: var(--base-dark-color);
+}
+.menu-container .bottom-sec .notification-alert-div {
+  text-align: center;
+  padding: 3px 8px 4px;
+  border-radius: 50%;
+  background-color: red;
+}
+.menu-container .bottom-sec .notification-alert-div p {
+  margin-top: 3px;
+  color: white;
+}
+
+.content-container {
+  width: 100%;
+  padding: 30px 30px 60px 240px;
+}
+
+@media only screen and (max-width: 760px) {
+  .menu-container {
+    position: fixed;
+    overflow: hidden;
+  }
+  .menu-container .top-sec #logo {
+    display: none;
+  }
+  .menu-container .top-sec #admin-ham-menu {
+    display: block;
+  }
+  .menu-container .bottom-sec ul li p {
+    display: none;
+  }
+}/*# sourceMappingURL=landlord-menu.css.map */

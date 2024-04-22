@@ -1,0 +1,37 @@
+.convey-issue-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.convey-issue-container .convey-issue-div {
+  width: 60%;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 1009;
+  background-color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+}
+.convey-issue-container .convey-issue-div .top-section {
+  justify-content: space-between;
+}
+.convey-issue-container .convey-issue-div .top-section img {
+  min-height: 24px;
+  max-height: 24px;
+}
+.convey-issue-container .convey-issue-div .convey-issue-form {
+  margin-top: 10px;
+  row-gap: 10px;
+}
+.convey-issue-container .convey-issue-div .convey-issue-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.convey-issue-container .convey-issue-div .convey-issue-form button {
+  padding: 6px 10px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=convey-issue.css.map */

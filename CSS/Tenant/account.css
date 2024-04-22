@@ -1,0 +1,288 @@
+.account-container {
+  width: 100%;
+  padding-top: 12px;
+}
+.account-container .account-div {
+  width: 96%;
+}
+.account-container .account-div .account-menu {
+  row-gap: 5px;
+  width: 16%;
+  max-width: 260px;
+  background-color: white;
+}
+.account-container .account-div .account-menu .menu {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding: 12px;
+  align-items: center;
+  border-radius: 8px;
+}
+.account-container .account-div .account-menu .menu:hover {
+  background-color: lavender;
+}
+.account-container .account-div .account-menu .active-menu {
+  background-color: lavender;
+  position: sticky;
+  top: 90px;
+}
+.account-container .account-div .account-detail {
+  padding: 12px;
+  width: 84%;
+  width: 100%;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form {
+  width: 100%;
+  row-gap: 12px;
+  margin-top: 15px;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .left {
+  width: 200px;
+  min-width: 150px;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .middle {
+  width: 200px;
+  min-width: 200px;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .right {
+  width: 70%;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .photo-container {
+  row-gap: 10px;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .photo-container .photo-div {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid red;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .photo-container .photo-div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .photo-container-new .middle input {
+  border: none;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .role-div {
+  margin-top: 6px;
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .name-container .name-div {
+  display: grid;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .address-container .address-div {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.account-container .account-div .account-detail .profile-detail-container .profile-form .account-state-container .account-state-div {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.account-container .account-div .account-detail .profile-detail-container .account-deactive-div {
+  margin-top: 20px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.account-container .account-div .account-detail .profile-detail-container .account-deactive-div button {
+  border-radius: 8px;
+}
+.account-container .account-div .account-detail .profile-detail-container .account-reset-div {
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-top: 5px;
+}
+.account-container .account-div .account-detail .profile-detail-container .account-reset-div input,
+.account-container .account-div .account-detail .profile-detail-container .account-reset-div button {
+  border-radius: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.account-container .account-div .account-detail .profile-detail-container .account-reset-div a {
+  color: white;
+  line-height: 44px;
+  padding: 0 24px;
+  border-radius: 8px;
+  background-color: var(--negative-color);
+}
+.account-container .account-div .password-security-container .top-section {
+  margin-top: 10px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  align-items: center;
+}
+.account-container .account-div .password-security-container .password-update-form {
+  width: 60%;
+  margin-top: 5px;
+  row-gap: 12px;
+}
+.account-container .account-div .password-security-container .password-update-form input[type=submit] {
+  width: 120px;
+  border-radius: 8px;
+}
+.account-container .account-div .password-security-container .initial-div {
+  margin-top: 12px;
+}
+.account-container .account-div .notification-setting-container {
+  row-gap: 10px;
+  /* Style the container for the toggle slider */
+  /* Hide the default checkbox */
+  /* Style the slider */
+  /* Style the slider when it's in the "on" state */
+  /* Style the slider when it's in the "off" state */
+}
+.account-container .account-div .notification-setting-container .toggle-container {
+  display: inline-block;
+  position: relative;
+  width: 46px;
+  height: 26px;
+}
+.account-container .account-div .notification-setting-container .toggle-container input {
+  display: none;
+}
+.account-container .account-div .notification-setting-container .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.1s;
+  border-radius: 12px;
+}
+.account-container .account-div .notification-setting-container .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.1s;
+  border-radius: 50%;
+}
+.account-container .account-div .notification-setting-container input:checked + .slider {
+  background-color: #2196F3;
+}
+.account-container .account-div .notification-setting-container input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.account-container .account-div .subscription-setting-container {
+  row-gap: 20px;
+}
+.account-container .account-div .subscription-setting-container .subscription-div {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+}
+.account-container .account-div .subscription-setting-container .subscription-div .subscription-left-div {
+  row-gap: 10px;
+  justify-content: center;
+}
+.account-container .account-div .subscription-setting-container .subscription-div .subscription-right-div {
+  row-gap: 10px;
+  padding: 6px;
+  border: 1px solid rgb(228, 225, 225);
+}
+.account-container .account-div .subscription-setting-container .subscription-div .subscription-right-div img {
+  width: 150px;
+}
+
+.myroom-review-section {
+  row-gap: 10px;
+}
+.myroom-review-section .my-room-review-form {
+  row-gap: 10px;
+}
+.myroom-review-section .my-room-review-form .my-room-submit-btn {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+}
+
+.review-container .review-div .right {
+  width: 100%;
+}
+
+#empty-my-voice-data-div {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .account-container .account-detail .password-security-container {
+    width: 100%;
+  }
+  .account-container .account-detail .password-security-container .password-update-form {
+    width: 100%;
+    row-gap: 12px;
+    margin-top: 5px;
+  }
+  .account-container .account-detail .password-security-container .password-update-form input[type=text] {
+    width: 100%;
+  }
+  .account-container .account-detail .password-security-container .password-update-form input[type=submit] {
+    width: 120px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  .account-container .account-detail .password-security-container .initial-div {
+    margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .account-container .account-div .account-menu {
+    width: 45px;
+  }
+  .account-container .account-div .account-menu .menu {
+    width: 45px;
+    width: 100%;
+  }
+  .account-container .account-div .account-menu .menu .menu-right p {
+    display: none;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form {
+    width: 100%;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form input,
+  .account-container .account-div .account-detail .profile-detail-container .profile-form select {
+    width: 143%;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form div {
+    flex-direction: column;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .role-div,
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .account-state-container {
+    flex-direction: row;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .address-container .address-div {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .account-reset-div {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .account-reset-div button {
+    width: 100%;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .account-reset-div a {
+    text-align: center;
+    width: 100%;
+  }
+  .account-container .account-div .account-detail .profile-detail-container .profile-form .account-state-container .account-state-div {
+    flex-direction: row;
+  }
+  .account-container .account-div .account-detail .subscription-setting-container .subscription-div {
+    row-gap: 12px;
+    flex-direction: column-reverse;
+  }
+}/*# sourceMappingURL=account.css.map */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lightbox </title>
+
+    <style>
+        img {
+            width: 250px;
+        }
+
+        .gallery-container {
+            background-color: lavender;
+
+        }
+
+        .gallery {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery .photo img:hover{
+            cursor: pointer;
+            transform: scale3d(1.1,1.1,1.1);
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../CSS/Common/lightbox.min.css">
+    <script src="../../Js/lightbox-plus-jquery.min.js"> </script>
+</head>
+
+<body>
+    <h2> Lightbox Gallery </h2>
+    <div class="gallery-cotnainer">
+        <div class="gallery">
+            <div class="photo">
+                <a href="../../Assests/Images/Bar-graph.png" data-lightbox="my-image">
+                    <img src="../../Assests/Images/Bar-graph.png" alt="">
+                </a>
+            </div>
+
+            <div class="photo">
+                <a href="../../Assests/Images/Delete-black.png" data-lightbox="my-image">
+                    <img src="../../Assests/Images/Delete-black.png" alt="">
+                </a>
+            </div>
+
+            <div class="photo">
+                <a href="../../Assests/Images/ad-2.png" data-lightbox="my-image">
+                    <img src="../../Assests/Images/ad-2.png" alt="">
+                </a>
+            </div>
+
+            <div class="photo">
+                <a href="../../Assests/Images/notification_icon_user_join.jpg" data-lightbox="my-image">
+                    <img src="../../Assests/Images/notification_icon_user_join.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="photo">
+                <a href="../../Assests/Images/rating.png" data-lightbox="my-image">
+                    <img src="../../Assests/Images/rating.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

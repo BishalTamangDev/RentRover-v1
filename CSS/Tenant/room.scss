@@ -1,0 +1,123 @@
+.room-main-container{
+    row-gap: 20px;
+       
+    .show-all-container{
+        column-gap: 10px;
+        p{
+            color: var(--base-color);
+        }
+    }
+
+}
+
+// all room container
+.room-container {
+    // row-gap: 20px;
+    // column-gap: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.room {
+    width: 450px;
+    max-height: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 6px;
+    padding-right: 8px;
+    overflow: hidden;
+    border-radius: 8px;
+    column-gap: 8px;
+    background-color: white;
+    border: 1px solid rgb(218, 218, 218);
+
+    &:hover {
+        box-shadow: -2px 2px 4px 0 var(--shadow-color);
+    }
+
+    .room-photo-div {
+        width: 240px;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 6px;
+        column-gap: 10px;
+        border: 1px solid rgb(233, 233, 233);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .room-spec-div {
+        width: 70%;
+        padding-top: 2px;
+        justify-content: space-between;
+
+        .verified-wishlist-div {
+            width: 100%;
+            justify-content: space-between;
+
+            .verified-div {
+                column-gap: 0px;
+                align-items: center;
+
+                img {
+                    width: 20px;
+                }
+            }
+
+            .wishlist-div {
+                img {
+                    width: 26px;
+                }
+            }
+        }
+
+        .location-div {
+            width: 100%;
+        }
+
+        .amenity-div {
+            height: 22px;
+            overflow: hidden;
+        }
+
+        .rating-div {
+            column-gap: 3px;
+            align-items: center;
+
+            img {
+                width: 20px;
+            }
+        }
+
+        .price-show-more-div {
+            justify-content: space-between;
+            align-items: center;
+
+            .rating-div{
+                column-gap: 4px;
+                align-items: center;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+
+                p{
+                    margin-top: 3px;
+                }
+            }
+
+            .show-more-div {
+                .normal-button {
+                    width: fit-content;
+                    border-radius: 4px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}

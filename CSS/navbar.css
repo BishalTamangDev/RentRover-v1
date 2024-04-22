@@ -1,0 +1,62 @@
+.nav-container {
+  padding: 16px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+.nav-container .nav-div {
+  width: 96%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container .nav-div .logo-div {
+  align-items: center;
+}
+.nav-container .nav-div .logo-div .website-logo {
+  width: 100px;
+}
+.nav-container .nav-div .operation-div {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 0;
+}
+.nav-container .nav-div .operation-div .contact-div {
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.nav-container .nav-div .operation-div .contact-div img {
+  width: 22px;
+  height: 22px;
+}
+.nav-container .nav-div .operation-div .wishlist-div {
+  align-items: center;
+}
+.nav-container .nav-div .operation-div .wishlist-div img {
+  width: 22px;
+}
+.nav-container .nav-div .operation-div .wishlist-div .right {
+  top: -8px;
+  left: -8px;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: red;
+}
+.nav-container .nav-div .operation-div .wishlist-div .right p {
+  margin-top: 2px;
+  color: white;
+  text-align: center;
+}
+.nav-container .nav-div .operation-div .login-div button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0;
+  padding: 8px 16px;
+}/*# sourceMappingURL=navbar.css.map */

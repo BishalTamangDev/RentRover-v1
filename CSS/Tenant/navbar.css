@@ -1,0 +1,223 @@
+.nav-container {
+  top: 0;
+  z-index: 100;
+  padding: 16px 0;
+  position: fixed;
+  background-color: white;
+}
+.nav-container .nav {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-container .nav .logo-div .website-logo {
+  width: 120px;
+}
+.nav-container .nav .operation-div {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.nav-container .nav .operation-div .find-room-div {
+  align-items: center;
+}
+.nav-container .nav .operation-div .find-room-div p:hover {
+  color: var(--base-color);
+}
+.nav-container .nav .operation-div .wishlist-div {
+  padding-top: 8px;
+  align-items: center;
+}
+.nav-container .nav .operation-div .wishlist-div .right .top img {
+  width: 26px;
+}
+.nav-container .nav .operation-div .wishlist-div .right .bottom {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  margin-left: 12px;
+  margin-top: -8px;
+  border-radius: 50%;
+  align-items: center;
+  color: white;
+  background-color: rgba(223, 2, 2, 0.9);
+}
+.nav-container .nav .operation-div .wishlist-div .right .bottom p {
+  margin: 0 auto;
+}
+.nav-container .nav .operation-div .profile-div {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 4px 6px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(212, 211, 211);
+}
+.nav-container .nav .operation-div .profile-div .left {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nav-container .nav .operation-div .profile-div .left #profile-pic {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nav-container .nav .operation-div .profile-div .right {
+  align-items: center;
+}
+
+.user-menu-container .user-menu-div {
+  margin-top: 76px;
+  justify-content: flex-end;
+}
+.user-menu-container .user-menu-div .menu-container {
+  z-index: 100;
+  position: fixed;
+  background-color: white;
+  border: 1px solid whitesmoke;
+}
+.user-menu-container .user-menu-div .menu-container .section {
+  padding: 20px;
+  padding-right: 80px;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.user-menu-container .user-menu-div .menu-container .section:hover {
+  background-color: whitesmoke;
+}
+.user-menu-container .user-menu-div .menu-container .section .left img {
+  width: 22px;
+}
+.user-menu-container .user-menu-div .menu-container hr {
+  height: 1px;
+  background-color: var(--neutral-light-color);
+}
+
+.notification-menu-container {
+  padding-right: 2%;
+  justify-content: flex-end;
+}
+.notification-menu-container .notification-menu-div {
+  justify-content: flex-end;
+}
+.notification-menu-container .notification-menu-div .notification-container {
+  z-index: 100;
+  position: fixed;
+  width: 400px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  max-height: 80vh;
+  overflow-x: auto;
+}
+.notification-menu-container .notification-menu-div .notification-container .notification-top-section {
+  width: 100%;
+  row-gap: 8px;
+  padding: 16px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  justify-content: space-between;
+}
+.notification-menu-container .notification-menu-div .notification-container .notification-top-section .top {
+  align-items: center;
+  justify-content: space-between;
+}
+.notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom .card {
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+.notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom .card:hover {
+  background-color: lavender;
+}
+.notification-menu-container .notification-menu-div .notification-container .section {
+  width: 100%;
+  padding: 12px;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  justify-content: space-between;
+}
+.notification-menu-container .notification-menu-div .notification-container .section:hover {
+  background-color: lavender;
+}
+.notification-menu-container .notification-menu-div .notification-container .section .left {
+  width: 57px;
+  overflow: hidden;
+}
+.notification-menu-container .notification-menu-div .notification-container .section .left .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+.notification-menu-container .notification-menu-div .notification-container .section .left .icon-box {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.notification-menu-container .notification-menu-div .notification-container .section .left .icon-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.notification-menu-container .notification-menu-div .notification-container .section .right {
+  width: 100%;
+  padding-top: 1px;
+}
+.notification-menu-container .notification-menu-div .notification-container .read-notification .left .dot {
+  background-color: green;
+}
+.notification-menu-container .notification-menu-div .notification-container .unread-notification .left .dot {
+  background-color: tomato;
+}
+.notification-menu-container .notification-menu-div .notification-container .empty-data-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.notification-menu-container .notification-menu-div .notification-container .empty-data-div img {
+  margin: auto;
+  width: 40%;
+}
+.notification-menu-container .notification-menu-div .notification-container hr {
+  height: 1px;
+  background-color: var(--neutral-light-color);
+}
+
+.logout-dialog-container {
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+}
+.logout-dialog-container .logout-dialog-div {
+  width: 370px;
+  width: 40%;
+  padding: 20px;
+  padding-bottom: 20px;
+  border-radius: 12px;
+  margin-top: 20%;
+  background-color: white;
+  row-gap: 20px;
+}
+.logout-dialog-container .logout-dialog-div .bottom {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.logout-dialog-container .logout-dialog-div .bottom button {
+  padding: 10px 40px;
+}/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,248 @@
+.body-container {
+  width: 100%;
+}
+.body-container .aside-menu-container {
+  position: fixed;
+  top: 0;
+  width: 13%;
+  max-width: 247px;
+  height: 100%;
+  padding: 20px 12px;
+  z-index: 100;
+  background-color: white;
+}
+.body-container .aside-menu-container .logo-section {
+  padding-left: 12px;
+}
+.body-container .aside-menu-container .logo-section img {
+  width: 60%;
+}
+.body-container .aside-menu-container .aside-menu-section {
+  margin-top: 80px;
+  row-gap: 8px;
+}
+.body-container .aside-menu-container .section {
+  padding: 12px 12px;
+  row-gap: 6px;
+  border-radius: 8px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  align-items: center;
+}
+.body-container .aside-menu-container .section:hover {
+  background-color: rgb(237, 237, 237);
+}
+.body-container .nav-menus-container {
+  width: 100%;
+  margin-left: 13%;
+}
+.body-container .nav-menus-container .nav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 87%;
+  padding: 16px 20px;
+  z-index: 90;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container {
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container .nav-notification-container {
+  padding-top: 3px;
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container .nav-notification-container .notification-icon-div img {
+  width: 32px;
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container .nav-notification-container .notification-count-div {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  align-items: center;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: 16px;
+  opacity: 0.9;
+  background-color: red;
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container .nav-notification-container .notification-count-div p {
+  color: white;
+  margin: auto;
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container .profile-container {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.body-container .nav-menus-container .nav-container .notification-profile-container .profile-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body-container .nav-menus-container .menus-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 80;
+  width: 100%;
+  justify-content: flex-end;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container {
+  width: 100%;
+  padding-top: 69px;
+  padding-right: 24px;
+  justify-content: flex-end;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container .user-menu-div {
+  justify-content: flex-end;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container .user-menu-div .user-menu {
+  z-index: 100;
+  background-color: white;
+  border: 1px solid whitesmoke;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container .user-menu-div .user-menu .section {
+  padding: 20px;
+  padding-right: 80px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  align-items: center;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container .user-menu-div .user-menu .section:hover {
+  background-color: var(--neutral-light-color);
+  background-color: lavender;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container .user-menu-div .user-menu .section img {
+  width: 22px;
+}
+.body-container .nav-menus-container .menus-container .user-menu-container .user-menu-div .user-menu hr {
+  height: 1px;
+  background-color: var(--shadow-color);
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container {
+  padding-top: 68px;
+  padding-right: 24px;
+  height: 80vh;
+  justify-content: flex-end;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div {
+  justify-content: flex-end;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container {
+  z-index: 100;
+  position: fixed;
+  width: 400px;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  max-height: 80vh;
+  overflow-x: auto;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .notification-top-section {
+  width: 100%;
+  row-gap: 8px;
+  padding: 12px;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  justify-content: space-between;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .notification-top-section .top {
+  align-items: center;
+  justify-content: space-between;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom .card {
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom .card:hover {
+  background-color: lavender;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .notification-top-section .bottom .active-card {
+  background-color: var(--shadow-color);
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section {
+  width: 100%;
+  padding: 12px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  justify-content: space-between;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section:hover {
+  background-color: lavender;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section .left {
+  width: 57px;
+  overflow: hidden;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section .left .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section .left .icon-box {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section .left .icon-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .section .right {
+  width: 100%;
+  row-gap: 4px;
+  margin-top: -4px;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container hr {
+  height: 1px;
+  background-color: var(--neutral-light-color);
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .empty-data-div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.body-container .nav-menus-container .menus-container .notification-menu-container .notification-menu-div .notification-container .empty-data-div img {
+  margin: auto;
+  width: 40%;
+}
+
+@media only screen and (max-width: 1500px) {
+  .body-container .aside-menu-container {
+    width: 50px;
+    padding: 20px 0px;
+  }
+  .body-container .aside-menu-container .logo-section img {
+    display: none;
+  }
+  .body-container .aside-menu-container .aside-menu-section {
+    width: 50px;
+  }
+  .body-container .aside-menu-container .section .right {
+    display: none;
+  }
+  .body-container .nav-menus-container {
+    margin-left: 50px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+  .body-container .nav-menus-container .nav-container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=aside.css.map */

@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(248, 248, 248);
+}
+
+.card-container{
+    .card{
+        background-color: white;
+        column-gap: 10px;
+    }
+}
+
+.selected-my-voice-container{
+    row-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+
+    .selected-my-voice-div{
+        row-gap: 10px;
+        .selected-my-voice-top {
+            justify-content: space-between;
+            .left{
+                width: fit-content;
+                height: fit-content;
+                color: white;
+                padding: 4px 6px;
+            }
+
+            .right{
+                img{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+
+        .selected-my-voice-redirection-section {
+            column-gap: 12px;
+
+
+            .selected-my-voice-redirection {
+                column-gap: 8px;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+
+                p {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .selected-my-voice-response-container{
+        width: 100%;
+        row-gap: 10px;
+        padding-left: 10px;
+        border-left: 2px solid gray;
+        
+        .selected-my-voice-response-div{
+            column-gap: 10px;
+            padding: 6px;
+            align-items: center;
+            background-color: whitesmoke;
+
+            .left{
+                .profile-div{
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    border: 2px solid red;
+                    
+                    img{
+                        width: 100%;
+                        width: fit-content;
+                    }
+                }
+            }
+
+            .middle{
+                width: 100%;
+            }
+
+            .right{
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .response-form-container{
+        column-gap: 10px;
+        margin-top: 6px;
+        .left{
+            .photo-container{
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                border-radius: 100%;
+                img{
+                    width: 100%;
+                    height: fit-content;
+                }
+            }
+        }
+
+        .response-form{
+            width: 100%;
+            row-gap: 10px;
+
+            textarea{
+                border-radius: 6px;
+                resize: vertical;
+                max-height: 160px;
+                min-height: 100px;
+            }
+
+            button{
+                width: fit-content;
+            }
+        }
+    }
+}
+
+.my-voice-main-container {
+    .my-voice-main-div {
+        row-gap: 20px;
+
+        .my-voice-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+
+            .my-voice-div {
+                background-color: white;
+                padding: 10px;
+                row-gap: 8px;
+                border-radius: 8px;
+
+                .top {
+                    width: fit-content;
+                    padding: 4px 8px;
+                    color: white;
+                }
+
+                .my-voice {
+                    row-gap: 2px;
+                }
+
+                .my-voice-redirection-section {
+                    column-gap: 12px;
+
+                    .my-voice-redirection {
+                        column-gap: 8px;
+
+                        img {
+                            width: 22px;
+                            height: 22px;
+                        }
+
+                        p {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

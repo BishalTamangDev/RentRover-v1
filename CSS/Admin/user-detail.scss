@@ -1,0 +1,140 @@
+.body-container {
+    .content-article {
+        width: 87%;
+        padding: 0 24px;
+        padding-top: 24px;
+        background-color: white;
+
+        .user-detail-div {
+            column-gap: 20px ;
+            .photo-container {
+                .photo-div {
+                    height: 380px;
+                    overflow: hidden;
+                    border-radius: 12px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    background-color: whitesmoke;
+                }
+            }
+
+            div {
+                .left {
+                    width: 180px;
+                    min-width: 120px;
+                    overflow: hidden;
+                    padding: 4px 0;
+
+                    p {
+                        padding-left: 2px;
+                    }
+                }
+
+                .right {
+                    padding: 4px 0;
+                }
+            }
+
+            .user-detail-section-2{
+                row-gap: 8px;
+                img{
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+                a{
+                    column-gap: 10px;
+                }
+            }
+
+            .button-div {
+                margin-top: 8px;
+                column-gap: 12px;
+
+                button {
+                    border-radius: 6px;
+                }
+
+                .positive-button {
+                    display: flex;
+                    column-gap: 4px;
+                    align-items: center;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+            }
+        }
+
+        // residing room detail
+        .residing-room-detail-container {
+            row-gap: 8px;
+            margin-top: 30px;
+
+            .heading {
+                background-color: lavenderblush;
+                padding: 8px 4px;
+            }
+
+            .room-detail-div {
+                .left,
+                .right {
+                    p {
+                        padding: 4px 0;
+                    }
+                }
+
+                .left {
+                    min-width: 120px;
+                }
+            }
+        }
+
+        // landlord section
+        .landlord-detail-container {
+            margin-bottom: 30px;
+
+            .landlord-houses,
+            .landlord-rooms {
+                margin-top: 30px;
+                row-gap: 8px;
+            }
+
+            .empty-result-div{
+                background-color: lavenderblush;
+                align-items: center;
+                p{
+                    margin: 0 auto;
+                    line-height: 48px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .body-container {
+        .content-article {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .body-container {
+        .content-article {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    .body-container {
+        .content-article {
+            padding: 12px;
+        }
+    }
+}

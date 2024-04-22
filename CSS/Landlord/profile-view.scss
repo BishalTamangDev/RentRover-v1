@@ -1,0 +1,70 @@
+.profile-form {
+    width: 100%;
+    row-gap: 12px;
+    margin-top: 15px;
+
+    .left {
+        width: 150px;
+        min-width: 150px;
+        max-width: 150px;
+    }
+
+    .photo-container {
+        row-gap: 10px;
+
+        .photo-div {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid red;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .account-state-container {
+        .account-state-div {
+            align-items: center;
+            column-gap: 6px;
+        }
+    }
+}
+
+.account-deactive-div {
+    margin-top: 10px;
+    column-gap: 8px;
+
+    button {
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .body-container {
+        .content-article {
+            .profile-form {
+
+                .photo-container {
+                    .photo-div {
+                        transition: 0.5s;
+                        width: 100%;
+                        height: 30vh;
+                        border-radius: unset;
+                        border: 4px solid red;
+                        border: unset;
+                    }
+                }
+            }
+
+            .account-deactive-div {
+                row-gap: 12px;
+                flex-direction: column;
+            }
+        }
+    }
+}

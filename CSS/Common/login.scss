@@ -1,0 +1,79 @@
+body {
+    background-image: url('../../Assests/Images/room-3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+
+hr {
+    background-color: var(--base-light-color);
+}
+
+.login-container {
+    width: 500px;
+    overflow: hidden;
+    // margin: 60px auto;
+    transform: translate(50%, 50%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: rgba(255, 255, 255, 0.9);
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    .login-top-section {
+        width: 100%;
+        // align-items: center;
+        column-gap: 10px;
+
+        abbr{
+            margin-top: 3px;
+        }
+    }
+
+    .login-bottom-section {
+        .login-form {
+            column-gap: 30px;
+
+            .form-section {
+                margin-top: 24px;
+            }
+
+            .heading-sec {
+                align-items: center;
+                column-gap: 20px;
+            }
+
+            .password-sec{
+                .top{
+                    justify-content: space-between;
+                }
+            }
+
+            .name-sec-right {
+                column-gap: 10px;
+            }
+
+            .password-sec-bottom {
+                column-gap: 10px;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                height: 48px;
+                margin-top: 20px;
+            }
+
+            a{
+                margin-top: 6px;
+            }
+        }
+    }
+}

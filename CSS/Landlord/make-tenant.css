@@ -1,0 +1,51 @@
+#dark-background {
+  z-index: 1;
+}
+
+.make-tenant-dialog-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1011;
+  width: 100%;
+  width: 100%;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div {
+  width: 60%;
+  row-gap: 10px;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 10px 12px;
+  padding-bottom: 14px;
+  background-color: white;
+  border-radius: 8px;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .top {
+  justify-content: space-between;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .top img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .bottom .make-tenant-form {
+  row-gap: 10px;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .bottom .make-tenant-form .note {
+  padding-left: 2px;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .bottom .make-tenant-form .agreement-section {
+  align-items: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  padding-left: 3px;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .bottom .make-tenant-form .agreement-section input[type=checkbox] {
+  width: 14px;
+  height: 14px;
+  margin-top: -2px;
+}
+.make-tenant-dialog-container .make-tenant-dialog-div .bottom .make-tenant-form button {
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=make-tenant.css.map */

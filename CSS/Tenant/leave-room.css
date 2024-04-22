@@ -1,0 +1,28 @@
+.leave-room-container {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  top: -78px;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  z-index: 1009;
+}
+.leave-room-container .leave-room-div {
+  margin: auto;
+  width: 40%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px 14px;
+}
+.leave-room-container .leave-room-div .leave-room-form {
+  row-gap: 10px;
+}
+.leave-room-container .leave-room-div .leave-room-form .top-section {
+  justify-content: space-between;
+  align-items: center;
+}
+.leave-room-container .leave-room-div .leave-room-form .top-section img {
+  cursor: pointer;
+  width: 24px;
+}/*# sourceMappingURL=leave-room.css.map */

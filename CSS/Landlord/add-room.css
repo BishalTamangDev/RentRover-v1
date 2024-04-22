@@ -1,0 +1,214 @@
+.section-heading-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-room-form-container {
+  margin-top: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.add-room-form-container .room-registration-form {
+  width: 65%;
+  row-gap: 12px;
+}
+.add-room-form-container .room-registration-form .left {
+  width: 14%;
+  overflow: hidden;
+  justify-content: center;
+}
+.add-room-form-container .room-registration-form .left p {
+  align-items: center;
+}
+.add-room-form-container .room-registration-form .right {
+  width: 86%;
+}
+.add-room-form-container .room-registration-form .bhk-div .right {
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  align-items: center;
+}
+.add-room-form-container .room-registration-form .photo-container {
+  width: 100%;
+  row-gap: 5px;
+}
+.add-room-form-container .room-registration-form .photo-container .photo-div {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.add-room-form-container .room-registration-form .photo-container .photo-div .photo input[type=file] {
+  z-index: 2;
+  max-width: 180px;
+  overflow: hidden;
+  margin-left: -6px;
+  margin-top: -24px;
+  border: none;
+}
+.add-room-form-container .room-registration-form .photo-container .photo-div .photo label {
+  z-index: 3;
+  border-radius: 8px;
+  background-color: lavender;
+  padding: 18px 12px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  cursor: pointer;
+}
+.add-room-form-container .room-registration-form .photo-container .photo-div .photo label:active {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+.add-room-form-container .room-registration-form .photo-container .photo-div .photo label img {
+  width: 20px;
+}
+.add-room-form-container .room-registration-form .photo-container p {
+  margin-top: 8px;
+}
+.add-room-form-container .room-registration-form .amenity-container {
+  row-gap: 10px;
+}
+.add-room-form-container .room-registration-form .amenity-container .amenity-div {
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.add-room-form-container .room-registration-form .amenity-container .amenity-div .amenity {
+  border-radius: 12px;
+  padding: 12px;
+  flex-direction: row;
+  justify-content: unset;
+  border: 1px solid lightgray;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.add-room-form-container .room-registration-form .amenity-container .amenity-div .amenity .amenity-right {
+  row-gap: 8px;
+}
+.add-room-form-container .room-registration-form .amenity-container .amenity-div .amenity .amenity-right img {
+  width: 40px;
+}
+.add-room-form-container .room-registration-form .requirement-div {
+  row-gap: 10px;
+}
+.add-room-form-container .room-registration-form .requirement-div textarea {
+  border-radius: 12px;
+  border: 1px solid rgb(207, 207, 207);
+}
+.add-room-form-container .room-registration-form .submit-button-container input[type=submit] {
+  width: 40%;
+  border-radius: 12px;
+}
+.add-room-form-container .house-detail-container {
+  width: 35%;
+  row-gap: 10px;
+  overflow: hidden;
+  padding: 6px;
+  border-radius: 12px;
+}
+.add-room-form-container .house-detail-container .house-photo-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.add-room-form-container .house-detail-container .house-photo-container img {
+  width: 120%;
+}
+.add-room-form-container .house-detail-container hr {
+  height: 1px;
+  background-color: var(--neutral-light-color);
+}
+.add-room-form-container .house-detail-container .house-detail-table {
+  margin-top: 5px;
+  border-collapse: collapse;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
+.add-room-form-container .house-detail-container .house-detail-table tr td {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  vertical-align: top;
+}
+.add-room-form-container .house-detail-container .house-detail-table tr td:nth-child(1) {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+.add-room-form-container .house-detail-container .house-detail-table tr td:nth-child(1) img {
+  width: 26px;
+  min-width: 26px;
+}
+.add-room-form-container .house-detail-container .house-detail-table tr td:nth-child(2) {
+  padding-right: 12px;
+}
+.add-room-form-container .house-detail-container .house-detail-table tr td:nth-child(3) {
+  padding-right: 6px;
+}
+.add-room-form-container .house-detail-container button {
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .body-container .empty-section {
+    width: 50px;
+  }
+  .body-container .content-article {
+    width: 100%;
+  }
+  .body-container .content-article .add-room-form-container {
+    padding-top: 24px;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form {
+    overflow: hidden;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form div {
+    flex-direction: column;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form div .left {
+    width: 100%;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form div .right {
+    width: 100%;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .bhk-div .right {
+    flex-direction: row;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .photo-container .photo-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .amenity-container .amenity-div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (max-width: 960px) {
+  .body-container .content-article .add-room-form-container {
+    flex-direction: column-reverse;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form {
+    width: 100%;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .photo-container .photo-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .amenity-container .amenity-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-container .content-article .add-room-form-container .house-detail-container {
+    width: 100%;
+    padding: 12px 0;
+    background-color: unset;
+  }
+  .body-container .content-article .add-room-form-container .house-detail-container .house-photo-container {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .body-container .content-article .add-room-form-container .room-registration-form {
+    width: 100%;
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .photo-container .photo-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .body-container .content-article .add-room-form-container .room-registration-form .amenity-container .amenity-div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=add-room.css.map */

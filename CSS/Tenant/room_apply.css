@@ -1,0 +1,65 @@
+#dark-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.room-apply-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    margin: auto;
+    
+    .room-apply-div{
+        margin-top: 60px;
+        background-color: white;
+        width: 40%;
+        margin: 80px auto;
+        padding: 20px;
+        border-radius: 12px;
+
+        .room-apply-form{
+            row-gap: 10px;
+            .top-section{
+                justify-content: space-between;
+            }
+        }
+
+        .room-apply-previous-phase-div,
+        .room-apply-next-phase-div{
+            width: auto;
+            p{
+                border-radius: 12px;
+                background-color: var(--negative-color);
+                line-height: 40px;
+                padding-left: 20px;
+                padding-right: 20px;
+                color: white;
+            }
+        }
+
+        .room-apply-phase-1{
+            .room-apply-next-phase-div{
+                margin-top: 10px;
+            }
+        }
+            .room-apply-phase-2{
+            row-gap: 10px;
+            textarea{
+                height: 120px;
+            }
+
+            input[type="submit"]{
+                border-radius: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+.section-heading-container{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-article {
+    width: 87%;
+    padding: 24px;
+    // align-items: center;
+    background-color: white;
+
+    .heading-div {
+        width: 100%;
+        row-gap: 8px;
+
+        .top {
+            justify-content: space-between;
+
+            button {
+                border-radius: 8px;
+            }
+        }
+    }
+
+    .house-registration-form {
+        margin-top: 20px;
+        row-gap: 15px;
+        width: 100%;
+
+        // location >> district & area
+        .location-container {
+            column-gap: 12px;
+            height: 40vh;
+
+            .location-name-div {
+                width: 360px;
+                row-gap: 8px;
+            }
+
+            .map-div {
+                width: 100%;
+                border-radius: 12px;
+                overflow: hidden;
+
+                background-color: wheat;
+
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 500px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .gmap_iframe {
+                    width: 100% !important;
+                    height: 100% !important;
+                }
+            }
+        }
+
+        .photo-container {
+            width: 100%;
+
+            .photo-div {
+                margin-top: 10px;
+                gap: 10px;
+                display: grid;
+                grid-template-columns: repeat(9, 1fr);
+
+                .photo {
+                    input[type=file] {
+                        z-index: 2;
+                        max-width: 200px;
+                        overflow: hidden;
+                        margin-left: -6px;
+                        margin-top: -24px;
+                        border: none;
+                    }
+
+                    label {
+                        z-index: 3;
+                        border-radius: 8px;
+                        background-color: lavender;
+                        padding: 18px 12px;
+                        cursor: pointer;
+                        column-gap: 6px;
+                        align-items: center;
+
+                        &:active {
+                            transform: scale3d(1.05, 1.05, 1.05);
+                        }
+                    }
+                }
+            }
+
+            p {
+                margin-top: 8px;
+            }
+        }
+
+        // amenties
+        .amenity-container {
+            row-gap: 10px;
+
+            .amenity-div {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(6, 1fr);
+
+                .amenity {
+                    border-radius: 12px;
+                    padding: 12px;
+                    border: 1px solid lightgray;
+                    column-gap: 8px;
+
+                    .right {
+                        row-gap: 8px;
+
+                        img {
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // requirement
+        .requirement-container {
+            row-gap: 10px;
+
+            textarea {
+                // width: 100%;
+                border-radius: 6px;
+                border-color: rgb(197, 196, 196);
+            }
+        }
+
+        .submit-button-container {
+            input {
+                border-radius: 10px;
+                padding: 12px 48px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .body-container {
+        .content-article {
+            .house-registration-form {
+                .photo-container {
+                    .photo-div {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .body-container {
+        .content-article {
+            .house-registration-form {
+                .amenity-container {
+                    .amenity-div {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .body-container {
+        .content-article {
+            .house-registration-form {
+                .photo-container {
+                    .photo-div {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+                .amenity-container {
+
+                    .amenity-div {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}

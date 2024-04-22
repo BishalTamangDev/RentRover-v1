@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(248, 248, 248);
+}
+
+.card-container .card {
+  background-color: white;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.selected-my-voice-container {
+  row-gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.selected-my-voice-container .selected-my-voice-div {
+  row-gap: 10px;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-top {
+  justify-content: space-between;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-top .left {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  padding: 4px 6px;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-top .right img {
+  width: 28px;
+  height: 28px;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-redirection-section {
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-redirection-section .selected-my-voice-redirection {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-redirection-section .selected-my-voice-redirection img {
+  width: 22px;
+  height: 22px;
+}
+.selected-my-voice-container .selected-my-voice-div .selected-my-voice-redirection-section .selected-my-voice-redirection p {
+  cursor: pointer;
+}
+.selected-my-voice-container .selected-my-voice-response-container {
+  width: 100%;
+  row-gap: 10px;
+  padding-left: 10px;
+  border-left: 2px solid gray;
+}
+.selected-my-voice-container .selected-my-voice-response-container .selected-my-voice-response-div {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 6px;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.selected-my-voice-container .selected-my-voice-response-container .selected-my-voice-response-div .left .profile-div {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 2px solid red;
+}
+.selected-my-voice-container .selected-my-voice-response-container .selected-my-voice-response-div .left .profile-div img {
+  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.selected-my-voice-container .selected-my-voice-response-container .selected-my-voice-response-div .middle {
+  width: 100%;
+}
+.selected-my-voice-container .selected-my-voice-response-container .selected-my-voice-response-div .right img {
+  width: 20px;
+  height: 20px;
+}
+.selected-my-voice-container .response-form-container {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-top: 6px;
+}
+.selected-my-voice-container .response-form-container .left .photo-container {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.selected-my-voice-container .response-form-container .left .photo-container img {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.selected-my-voice-container .response-form-container .response-form {
+  width: 100%;
+  row-gap: 10px;
+}
+.selected-my-voice-container .response-form-container .response-form textarea {
+  border-radius: 6px;
+  resize: vertical;
+  max-height: 160px;
+  min-height: 100px;
+}
+.selected-my-voice-container .response-form-container .response-form button {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.my-voice-main-container .my-voice-main-div {
+  row-gap: 20px;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div {
+  background-color: white;
+  padding: 10px;
+  row-gap: 8px;
+  border-radius: 8px;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div .top {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4px 8px;
+  color: white;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div .my-voice {
+  row-gap: 2px;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div .my-voice-redirection-section {
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div .my-voice-redirection-section .my-voice-redirection {
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div .my-voice-redirection-section .my-voice-redirection img {
+  width: 22px;
+  height: 22px;
+}
+.my-voice-main-container .my-voice-main-div .my-voice-container .my-voice-div .my-voice-redirection-section .my-voice-redirection p {
+  cursor: pointer;
+}/*# sourceMappingURL=my-voice-detail.css.map */

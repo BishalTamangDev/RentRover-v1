@@ -1,0 +1,184 @@
+body {
+    background-image: url('../../Assests/Images/room-3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr {
+    background-color: var(--base-light-color);
+}
+
+.registration-container {
+    width: 1000px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin: 60px auto;
+    border: 1px solid rgb(212, 212, 212);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    .registration-top-section {
+        width: 100%;
+        align-items: center;
+        column-gap: 10px;
+
+        img{
+            margin-top: 4px;
+        }
+    }
+
+    .registration-bottom-section {
+        .registration-form {
+            column-gap: 30px;
+
+            .form-section {
+                margin-top: 24px;
+            }
+
+            .bottom-left-section {
+                width: 100%;
+
+                .heading-sec {
+                    align-items: center;
+                    column-gap: 20px;
+                }
+
+                .name-sec-right {
+                    column-gap: 10px;
+                }
+
+                .gender-sec {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+
+                    .left {
+                        width: 50%;
+                    }
+
+                    .right {
+                        width: 50%;
+                        column-gap: 16px;
+                        align-items: center;
+
+                        label {
+                            margin-left: -6px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .password-sec{
+                    .top{
+                        justify-content: space-between;
+                    }
+                    .password-sec-bottom {
+                        column-gap: 10px;
+                    }
+                }
+
+                .address-sec {
+                    .top {
+                        column-gap: 10px;
+                        select:nth-child(1){
+                            width: 88%;
+                        }
+                    }
+
+                    .bottom {
+                        margin-top: 8px;
+                        column-gap: 10px;
+
+                        select{
+                            width: 40%;
+                        }                        
+                    }
+                }
+            }
+
+            .bottom-right-section {
+                width: 100%;
+                .citizenship-photo-sec,
+                .profile-pic-sec {
+                    width: 100%;
+                    padding: 14px 8px;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 6px;
+                    background-color: white;
+                    border: 0.5px solid rgb(202, 202, 202);
+
+                    input[type=file] {
+                        border: none;
+                        width: 280px;
+                    }
+                }
+
+                .citizenship-photo-sec{
+                    align-items: start;
+                    .bottom{
+                        justify-content: space-between;
+                        margin-top: 14px;
+                        row-gap: 12px;
+                        input[type=file] {
+                            border: none;
+                            width: 280px;
+                        }
+
+                        .bottom-top, .bottom-bottom{
+                            justify-content: space-between;
+                            label{
+                                width: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .birth-date-sec {
+                    input[type=date] {
+                        margin-top: 6px;
+                        width: 100%;
+                        height: 48px;
+                        padding: 8px;
+                        // font-size: 17px;
+                    }
+                }
+
+                .terms-and-condition-sec {
+                    column-gap: 10px;
+
+                    label {
+                        cursor: pointer;
+                    }
+                }
+
+                input[type=submit] {
+                    width: 100%;
+                    height: 48px;
+                    margin-top: 20px;
+                }
+            }
+
+            .already-have-account-link{
+                display: block; 
+                float: right; 
+                margin-top: 10px; 
+                cursor: pointer
+            }
+        }
+    }
+}
+
+/* responsive text size for tablet*/
+@media only screen and (max-width: 1024px) {
+    .registration-container{
+        width: 570px;
+    }
+    .registration-bottom-section {
+        width: auto;
+        form {
+            flex-direction: column;
+        }
+    }
+}
